@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Intellyo tests" verbose="1" >
+
+    <test name="Research0">
+        <classes>
+            <class name="com.intellyo.test.research.intellyo.ResearchTest"/>
+        </classes>
+    </test>
+
+    <test name="Dashboard">
+        <classes>
+        </classes>
+    </test>
+</suite>
