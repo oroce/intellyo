@@ -18,18 +18,18 @@ public class ResearchTest extends CommonActions {
     public void researchPageOpenTest(){
         researchPageObject.openResearchPage();
         Assert.assertTrue(true);
-        //Assert.assertTrue(researchPageObject.isPageLoadProperly());
+        Assert.assertTrue(researchPageObject.isPageLoadProperly());
     }
 
     @Test(description = "Test Search with simpel use case"/*, dependsOnMethods = { "researchPageOpenTest" }*/)
     public void setResearchPageSearch(){
         researchPageObject.openResearchPage();
         Assert.assertTrue(true);
-        //researchPageObject.writeTextToSearchOnFaceBook("Intellyo");
-        //Assert.assertTrue(researchPageObject.isSearchDropDownListAppears());
-        //seleniumUtil.sleep(3);
-        //researchPageObject.clickOnCompany("Intellyo");
-        //Assert.assertTrue(dashboardPageObject.isPageLoadProperly("Intellyo"));
+        researchPageObject.writeTextToSearchOnFaceBook("Intellyo");
+        Assert.assertTrue(researchPageObject.isSearchDropDownListAppears());
+        seleniumUtil.sleep(3);
+        researchPageObject.clickOnCompany("Intellyo");
+        Assert.assertTrue(dashboardPageObject.isPageLoadProperly("Intellyo"));
 
     }
 }
